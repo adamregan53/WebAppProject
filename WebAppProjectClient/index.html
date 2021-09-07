@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Blog Site</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                  <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Blog Site</a>
+                  </div>
+                  <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                  </ul>
+                </div>
+            </nav>
+
+
+            <textarea rows="4" class="form-control" type="text" id="post-input" placeholder = "Write Post Here..." maxlength="254" style="font-size: 20pt; font-family: Arial;"></textarea>
+
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-primary btn-md" id="add-post-btn">Post</button>
+            </div>
+
+            <hr>
+
+            <table id="table" class="table">
+                <thead>
+                    <th style="width:3%">ID</th>
+                    <th >Post</th>
+                    <th style="width:10%">Date Posted</th>
+                    <th style="width:2%">Delete</th>
+                    <th style="width:2%">Edit</th>
+                </thead>
+                <tbody></tbody>
+            </table>
+
+
+            <section hidden id="update-post">
+                <textarea rows="4" class="form-control" type="text" id="update-post-input" placeholder = "New Text Here..." maxlength="254" style="font-size: 20pt; font-family: Arial;"></textarea>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary btn-md" id="close-edit-btn">Close</button>
+                    <button type="submit" class="btn btn-primary btn-md" id="update-post-btn">Update</button>
+                </div>
+            </section>
+
+        </div>
+
+    </main>
+
+    <script src="index.js"></script>
+
+
+</body>
+</html>
