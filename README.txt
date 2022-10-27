@@ -1,6 +1,8 @@
 Adam Regan x19401956
 Conor FitzGerald x19444092
 
+This project uses a basic CRUD model and involves the use of a distributed system using JavaScript and NodeJS. There are 2 applications, a client and a server which communicate information across localhost using NodeJS. The Server application uses a SQL database to store information which is displayed on the client application on loading. the client application can request to add, update and delete items from the the database by sending GET and POST requests to the server application. The server is also programmed using JavaScript Async to handle requests to the server asychronously.
+
 ------------------------------
 Dependencies:
 ------------------------------
